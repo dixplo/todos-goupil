@@ -1,0 +1,13 @@
+{{>header}}
+{{>index}}
+
+<ul>
+  <ul v-for="(item, index) in items" :key="item.id">
+  <v-btn @click="deleteTodo(item,index)">X</v-btn>
+    <% item %>
+    
+  </ul>
+</ul>
+
+{{>footer}}
+{{{vue}}}
